@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classify Ticket</title>
+  </head>
+  <body>
+    <h2>Ticket Classifier</h2>
+    <form method="post">
+      <textarea name="ticket" rows="4" cols="50"></textarea><br />
+      <button type="submit">Classify</button>
+    </form>
+    {% if prediction %}
+    <p><strong>Prediction:</strong> {{ prediction }}</p>
+    {% endif %}
+  </body>
+</html>

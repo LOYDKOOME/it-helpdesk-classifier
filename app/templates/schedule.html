@@ -1,0 +1,13 @@
+<!-- app/templates/schedule.html -->
+<h2>Schedule an Appointment</h2>
+<form method="POST">
+  Your Name: <input type="text" name="visitor_name" required /><br />
+  Staff to Visit: <input type="text" name="staff_name" required /><br />
+  Date: <input type="date" name="date" required /><br />
+  Time: <input type="time" name="time" required /><br />
+  <input type="submit" value="Schedule" />
+</form>
+
+{% if success %}
+<p>✅ Appointment scheduled for {{ visitor_name }}!</p>
+{% endif %}

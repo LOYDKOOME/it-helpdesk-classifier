@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <h2>Admin Dashboard</h2>
+    <p>Coming soon with analytics, visitor list, tickets etc.</p>
+    <h2>Visitors</h2>
+    <ul>
+      {% for v in visitors %}
+      <li>{{ v.name }} ({{ v.email }}) at {{ v.checkin_time }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Tickets</h2>
+    <ul>
+      {% for t in tickets %}
+      <li>{{ t.issue_text }} → <strong>{{ t.predicted_category }}</strong></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

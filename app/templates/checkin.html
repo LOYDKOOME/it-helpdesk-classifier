@@ -1,0 +1,12 @@
+<!-- app/templates/checkin.html -->
+<h2>Visitor Check-In</h2>
+<form method="POST">
+  Name: <input type="text" name="name" required /><br />
+  Contact: <input type="text" name="contact" required /><br />
+  Visiting: <input type="text" name="visiting" required /><br />
+  <input type="submit" value="Check In" />
+</form>
+
+{% if success %}
+<p>✅ Thank you {{ name }}, you’ve successfully checked in!</p>
+{% endif %}
