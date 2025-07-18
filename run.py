@@ -129,7 +129,7 @@ elif menu == "Login":
                 log_staff_action(username, "Logged in")
                 st.success(f"✅ Welcome, {username}!")
                 st.session_state.menu = "Admin Dashboard"
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("❌ Invalid credentials")
 
