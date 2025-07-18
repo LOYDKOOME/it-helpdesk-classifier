@@ -4,3 +4,4 @@ joblib
 jupyter
 Flask
 plotly
+openpyxl
